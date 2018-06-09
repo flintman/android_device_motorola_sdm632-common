@@ -68,10 +68,10 @@ public class DozeSettingsFragment extends PreferenceFragment implements Preferen
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.doze_panel);
         boolean dozeEnabled = MotoActionsSettings.isDozeEnabled(getActivity().getContentResolver());
-
+        boolean aodEnabled = MotoActionsSettings.isAODEnabled(getActivity());
         mAmbientDisplayPreference = (SwitchPreference) findPreference(AMBIENT_DISPLAY_KEY);
         mAmbientDisplayPreference.setOnPreferenceChangeListener(this);
-        mAmbientDisplayPreference.setChecked(dozeEnabled);
+        mAmbientDisplayPreference.setChecked(dozeEnabled && !aodEnabled);
 
         mHandwavePreference = (SwitchPreference) findPreference(KEY_GESTURE_HAND_WAVE);
         mPickupPreference = (SwitchPreference) findPreference(KEY_GESTURE_PICK_UP);
