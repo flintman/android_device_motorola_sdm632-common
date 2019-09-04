@@ -19,10 +19,9 @@ package com.dirtyunicorns.settings.device;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.hardware.display.AmbientDisplayConfiguration;
 import android.os.UserHandle;
 import android.preference.PreferenceManager;
-
-import com.android.internal.hardware.AmbientDisplayConfiguration;
 
 import com.dirtyunicorns.settings.device.actions.UpdatedStateNotifier;
 import com.dirtyunicorns.settings.device.actions.CameraActivationAction;
