@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.moto.actions;
+package com.dirtyunicorns.settings.device;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
@@ -22,7 +22,7 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
 import android.view.MenuItem;
 
-public class DozePreferenceActivity extends PreferenceActivity {
+public class DozeSettingsActivity extends PreferenceActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
