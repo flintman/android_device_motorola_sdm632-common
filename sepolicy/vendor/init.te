@@ -1,7 +1,6 @@
 allow init fsg_firmware_file:dir { mounton };
 allow init socket_device:sock_file { create setattr unlink };
 allow init fsg_firmware_file:filesystem  { relabelfrom  mount };
-allow init vendor_file:file execute;
 #TODO: This should not be needed and needs to be cleaned.
 allow fsg_firmware_file self:filesystem associate;
 allow init mnt_product_file:dir mounton;
@@ -9,3 +8,6 @@ allow init mnt_product_file:dir mounton;
 allow init bt_firmware_file:filesystem getattr;
 allow init firmware_file:filesystem getattr;
 allow init fsg_firmware_file:filesystem getattr;
+allow init hal_perf_default:binder call;
+allow init hal_perf_hwservice:hwservice_manager find;
+allow init vendor_file:file { execute };
