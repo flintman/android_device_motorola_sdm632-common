@@ -261,6 +261,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MotoActions
 
+# LMKD Enable stats logging
+TARGET_LMKD_STATS_LOG := true
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+	ro.lmk.log_stats=true
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
