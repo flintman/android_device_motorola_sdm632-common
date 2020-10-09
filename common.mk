@@ -170,10 +170,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FM2 \
     libqcomfm_jni \
-    init.qti.fm.sh \
-    qcom.fmradio
-
-PRODUCT_BOOT_JARS += qcom.fmradio
+    init.qti.fm.sh
 
 # GPS
 PRODUCT_PACKAGES += \
