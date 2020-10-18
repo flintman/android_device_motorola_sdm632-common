@@ -69,6 +69,10 @@ PRODUCT_PACKAGES += \
     bootctrl.msm8953 \
     bootctrl.msm8953.recovery
 
+# Board
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := msm8953
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl \
